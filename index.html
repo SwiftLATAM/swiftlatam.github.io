@@ -4,79 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SwiftLATAM</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #0a0a0a;
-      color: #fff;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 960px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-    header {
-      text-align: center;
-      padding: 100px 20px 60px;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5em;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #aaa;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 14px 28px;
-      background: #ff9900;
-      color: #000;
-      border: none;
-      border-radius: 8px;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 1rem;
-    }
-    section {
-      padding: 60px 0;
-    }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    .columns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
-    }
-    .card {
-      background: #1a1a1a;
-      padding: 30px;
-      border-radius: 12px;
-      width: 280px;
-    }
-    footer {
-      text-align: center;
-      padding: 40px;
-      color: #666;
-      font-size: 0.9rem;
-    }
-    @media (max-width: 768px) {
-      .columns {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -88,7 +19,7 @@
   <div class="container">
     <section>
       <h2>¿Qué es SwiftLATAM?</h2>
-      <p style="text-align: center; max-width: 700px; margin: auto;">
+      <p class="centered-text">
         Es una comunidad creada para conectar, enseñar y potenciar a los desarrolladores de iOS, macOS y todo el ecosistema Apple en español, desde América Latina para el mundo.
       </p>
     </section>
@@ -131,10 +62,10 @@
 
     <section id="apoyanos">
       <h2>Apóyanos</h2>
-      <p style="text-align: center; max-width: 700px; margin: auto;">
+      <p class="centered-text">
         Si te gusta lo que hacemos, puedes colaborar con el proyecto. Cada aporte ayuda a mantener y hacer crecer SwiftLATAM.
       </p>
-      <div style="text-align: center; margin-top: 30px;">
+      <div class="centered-block">
         <!-- Reemplaza este div con tu botón de PayPal -->
         <a class="btn" href="#gracias">Donar vía PayPal</a>
       </div>
@@ -142,8 +73,8 @@
 
     <section id="gracias" style="display: none;">
       <h2>¡Gracias por tu apoyo!</h2>
-      <p style="text-align: center;">Haz clic aquí para unirte al servidor de Discord:</p>
-      <div style="text-align: center; margin-top: 20px;">
+      <p class="centered-text">Haz clic aquí para unirte al servidor de Discord:</p>
+      <div class="centered-block">
         <a class="btn" href="https://discord.gg/TU_INVITACION" target="_blank">Entrar a Discord</a>
       </div>
     </section>
