@@ -1,89 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SwiftLATAM · Comunidad Apple LATAM</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SwiftLATAM</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="nav-content">
-      <span class="logo">SwiftLATAM</span>
-      <div class="nav-links">
-        <a href="#que-es">¿Qué es?</a>
-        <a href="#secciones">Contenido</a>
-        <a href="#vision">Visión</a>
-        <a href="#apoyanos">Apóyanos</a>
-      </div>
-    </div>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">SwiftLATAM</div>
+    <ul>
+      <li><a href="#que">¿Qué es?</a></li>
+      <li><a href="#encuentras">Recursos</a></li>
+      <li><a href="#vision">Visión</a></li>
+    </ul>
   </nav>
 
-  <header class="hero">
-    <div class="hero-content" data-aos="fade-up">
-      <h1>SwiftLATAM</h1>
-      <p>Comunidad de desarrolladores Apple desde Latinoamérica para el mundo.</p>
-      <a class="btn" href="#apoyanos">Únete a la comunidad</a>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1 data-aos="fade-up">Bienvenido a SwiftLATAM</h1>
+    <p data-aos="fade-up" data-aos-delay="100">
+      Comunidad de desarrolladores Apple en Latinoamérica.
+    </p>
+    <a class="btn" href="#que" data-aos="zoom-in" data-aos-delay="200">Explora</a>
+  </section>
+
+  <!-- ¿Qué es SwiftLATAM? -->
+  <section id="que">
+    <div class="container">
+      <h2 data-aos="fade-up">¿Qué es SwiftLATAM?</h2>
+      <p class="centered-text" data-aos="fade-up" data-aos-delay="100">
+        Es una comunidad creada para conectar, enseñar y potenciar a los desarrolladores de iOS, macOS y todo el ecosistema Apple en español.
+      </p>
     </div>
-  </header>
+  </section>
 
-  <main class="container">
-    <section id="que-es" data-aos="fade-up">
-      <h2>¿Qué es SwiftLATAM?</h2>
-      <p>Un espacio para aprender, compartir y colaborar entre devs Apple que hablan español.</p>
-    </section>
+  <!-- ¿Qué encontrarás aquí? -->
+  <section id="encuentras">
+    <div class="container">
+      <h2 data-aos="fade-up">¿Qué encontrarás aquí?</h2>
+      <div class="cards">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <h3>Aprende</h3>
+          <p>Tutoriales y ejemplos con Swift, UIKit, SwiftUI y más.</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <h3>Comparte</h3>
+          <p>Charlas, entrevistas y discusiones técnicas.</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+          <h3>Conecta</h3>
+          <p>Únete al Discord y colabora en proyectos reales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="secciones" class="columns" data-aos="fade-up">
-      <div class="card">
-        <h3>Aprende</h3>
-        <p>Tutoriales y recursos técnicos en Swift, UIKit y más.</p>
-      </div>
-      <div class="card">
-        <h3>Comparte</h3>
-        <p>Entrevistas, charlas y participación en comunidad.</p>
-      </div>
-      <div class="card">
-        <h3>Conecta</h3>
-        <p>Únete a nuestro Discord, participa y colabora en proyectos.</p>
-      </div>
-    </section>
-
-    <section id="vision" data-aos="fade-up">
-      <h2>Visión a Futuro</h2>
-      <div class="columns">
-        <div class="card">
+  <!-- Visión a futuro -->
+  <section id="vision">
+    <div class="container">
+      <h2 data-aos="fade-up">Visión a futuro</h2>
+      <div class="cards">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
           <h3>App educativa</h3>
-          <p>Una app para organizar y profundizar tus aprendizajes técnicos.</p>
+          <p>Una app para organizar tus aprendizajes de desarrollo Apple.</p>
         </div>
-        <div class="card">
-          <h3>YouTube y entrevistas</h3>
-          <p>Contenido audiovisual para explorar el mundo Apple dev.</p>
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <h3>Canal YouTube</h3>
+          <p>Contenido visual con entrevistas y análisis técnicos.</p>
         </div>
-        <div class="card">
-          <h3>Repositorio de código</h3>
-          <p>Snippets, tips y soluciones reales para tus proyectos.</p>
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+          <h3>Repositorio</h3>
+          <p>Fragmentos de código, tips y soluciones reales.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="apoyanos" data-aos="fade-up">
-      <h2>Apóyanos</h2>
-      <p>Ayúdanos a mantener vivo este proyecto colaborativo.</p>
-      <a class="btn" href="#gracias">Donar vía PayPal</a>
-    </section>
-  </main>
-
+  <!-- FOOTER -->
   <footer>
-    © 2025 SwiftLATAM · Hecho con pasión desde LATAM
+    © 2025 SwiftLATAM · Hecho con ❤️ por desarrolladores Apple LATAM
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+
 </body>
 </html>
