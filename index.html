@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SwiftLATAM</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <h1>SwiftLATAM</h1>
-    <p>Una comunidad para desarrolladores Apple en Latinoamérica.</p>
-    <a class="btn" href="#apoyanos">Únete a la comunidad</a>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwiftLATAM</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenido a SwiftLATAM</h1>
+      <p>Comunidad de desarrolladores Apple en Latinoamérica.</p>
+      <a href="#explora" class="btn">Explora</a>
+    </header>
 
-  <div class="container">
     <section>
       <h2>¿Qué es SwiftLATAM?</h2>
-      <p class="centered-text">
-        Es una comunidad creada para conectar, enseñar y potenciar a los desarrolladores de iOS, macOS y todo el ecosistema Apple en español, desde América Latina para el mundo.
-      </p>
+      <div class="centered-text">
+        <p>
+          Es una comunidad creada para conectar, enseñar y potenciar a los
+          desarrolladores de iOS, macOS y todo el ecosistema Apple en español.
+        </p>
+      </div>
     </section>
 
     <section>
@@ -29,15 +32,15 @@
       <div class="columns">
         <div class="card">
           <h3>Aprende</h3>
-          <p>Tutoriales, ejemplos y ejercicios prácticos con Swift, UIKit, SwiftUI y más.</p>
+          <p>Tutoriales y ejemplos con Swift, UIKit, SwiftUI y más.</p>
         </div>
         <div class="card">
           <h3>Comparte</h3>
-          <p>Participa en charlas, entrevistas y mesas de discusión sobre desarrollo Apple.</p>
+          <p>Charlas, entrevistas y discusiones técnicas.</p>
         </div>
         <div class="card">
           <h3>Conecta</h3>
-          <p>Únete al servidor de Discord, conoce a otros devs y colabora en proyectos reales.</p>
+          <p>Únete al Discord y colabora en proyectos reales.</p>
         </div>
       </div>
     </section>
@@ -47,62 +50,26 @@
       <div class="columns">
         <div class="card">
           <h3>App educativa</h3>
-          <p>Estamos creando una app para ayudarte a organizar y profundizar tus aprendizajes.</p>
+          <p>Una app para organizar tus aprendizajes de desarrollo Apple.</p>
         </div>
         <div class="card">
           <h3>Canal YouTube</h3>
-          <p>Publicaremos entrevistas, análisis técnicos y contenido visual didáctico.</p>
+          <p>Contenido visual con entrevistas y análisis técnico.</p>
         </div>
         <div class="card">
-          <h3>Repositorio de recursos</h3>
-          <p>Una biblioteca abierta con fragmentos de código, tips y soluciones reales.</p>
+          <h3>Repositorio</h3>
+          <p>Fragmentos de código, tips y soluciones reales.</p>
         </div>
       </div>
     </section>
 
-    <section id="apoyanos">
-      <h2>Apóyanos</h2>
-      <p class="centered-text">
-        Si te gusta lo que hacemos, puedes colaborar con el proyecto. Cada aporte ayuda a mantener y hacer crecer SwiftLATAM.
-      </p>
-      <div class="centered-block">
-        <a class="btn" href="#gracias">Donar vía PayPal</a>
+    <footer>
+      <p>© 2025 SwiftLATAM. Todos los derechos reservados.</p>
+      <div class="social-icons">
+        <a href="#"><img src="github.svg" alt="GitHub" /></a>
+        <a href="#"><img src="youtube.svg" alt="YouTube" /></a>
+        <a href="#"><img src="discord.svg" alt="Discord" /></a>
       </div>
-    </section>
-
-    <section id="gracias" style="display: none;">
-      <h2>¡Gracias por tu apoyo!</h2>
-      <p class="centered-text">Haz clic aquí para unirte al servidor de Discord:</p>
-      <div class="centered-block">
-        <a class="btn" href="https://discord.gg/TU_INVITACION" target="_blank">Entrar a Discord</a>
-      </div>
-    </section>
-  </div>
-
-  <footer>
-    <div class="social-icons">
-      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-        <img src="icons/linkedin.svg" alt="LinkedIn">
-      </a>
-      <a href="https://youtube.com" target="_blank" aria-label="YouTube">
-        <img src="icons/youtube.svg" alt="YouTube">
-      </a>
-      <a href="https://discord.com" target="_blank" aria-label="Discord">
-        <img src="icons/discord.svg" alt="Discord">
-      </a>
-      <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
-        <img src="icons/tiktok.svg" alt="TikTok">
-      </a>
-    </div>
- 
-    <p>© 2025 SwiftLATAM · Hecho con pasión por SwiftLATAM</p>
-  </footer>
-
-  <script>
-    if (window.location.hash === '#gracias') {
-      document.getElementById('apoyanos').style.display = 'none';
-      document.getElementById('gracias').style.display = 'block';
-    }
-  </script>
-</body>
+    </footer>
+  </body>
 </html>
