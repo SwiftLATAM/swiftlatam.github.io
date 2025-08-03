@@ -1,53 +1,60 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SwiftLATAM</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header fijo -->
-  <header class="main-header">
+
+  <!-- HEADER FIJO -->
+  <header class="site-header">
     <div class="logo">
-      <a href="#"><img src="swiftlatam-logo.png" alt="SwiftLATAM"></a>
+      <a href="index.html">
+        <img src="assets/images/logo-swiftlatam.png" alt="SwiftLATAM" />
+      </a>
     </div>
     <nav class="main-nav">
       <a href="#">News 1</a>
       <a href="#">News 2</a>
       <a href="#">News 3</a>
-      <a href="news4.html">News 4</a>
+      <a href="#">News 4</a>
       <a href="#">News 5</a>
       <a href="#">News 6</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Bienvenidos a SwiftLATAM</h1>
-    <p>Comunidad creada para conectar, enseñar y potenciar a los desarrolladores de iOS, macOS y todo el ecosistema Apple en español.</p>
-    <a class="hero-link" href="#">Descubre nuestras actividades</a>
+  <!-- HERO SECTION -->
+  <section class="hero-section" style="background-image: url('assets/images/hero.jpg');">
+    <div class="hero-content">
+      <h1>Bienvenidos a SwiftLATAM</h1>
+      <p>
+        Comunidad creada para conectar, enseñar y potenciar a los desarrolladores de iOS, macOS y todo el ecosistema Apple en español.
+      </p>
+      <a class="hero-link" href="news4.html">Descubre nuestras actividades</a>
+    </div>
   </section>
 
-  <!-- Bloques destacados -->
-  <section class="featured-blocks">
-    <a href="evento.html" class="featured left">
-      <img src="evento-anual.png" alt="Evento Anual">
-    </a>
-    <a href="app.html" class="featured right">
-      <img src="app-educativa.png" alt="App Educativa">
-    </a>
+  <!-- BLOQUES DESTACADOS -->
+  <section class="featured-section">
+    <div class="featured-card left" onclick="location.href='evento.html'">
+      <img src="assets/images/featured-event.jpg" alt="Evento anual" />
+    </div>
+    <div class="featured-card right" onclick="location.href='app.html'">
+      <img src="assets/images/featured-app.jpg" alt="App educativa" />
+    </div>
   </section>
 
-  <!-- Carrusel inferior -->
-  <section class="carousel-section" onclick="window.location.href='news4.html'">
-    <div class="carousel-track" id="carousel-track">
-      <!-- Aquí se cargarán los 25 logos -->
-      <img src="logo1.png" alt="">
-      <img src="logo2.png" alt="">
-      <img src="logo3.png" alt="">
-      <!-- ... -->
+  <!-- CARRUSEL CON DEGRADADO -->
+  <section class="carousel-section">
+    <div class="carousel-track">
+      <a href="news4.html">
+        <img src="assets/images/carousel/logo1.png" alt="Logo 1" />
+        <img src="assets/images/carousel/logo2.png" alt="Logo 2" />
+        <img src="assets/images/carousel/logo3.png" alt="Logo 3" />
+        <!-- Continúa con los demás logos -->
+      </a>
     </div>
   </section>
 
