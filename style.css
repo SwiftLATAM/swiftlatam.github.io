@@ -3,24 +3,16 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   min-height: 100vh;
-  background: radial-gradient(circle at 20% 30%, #000000 0%, #0a0a0a 30%, #1c1c3c 60%, #0033ff 80%, #d9a25f 100%);
-  background-blend-mode: screen;
+  background-color: #000;
+  background-image:
+    radial-gradient(circle at 20% 30%, #000000 0%, #0a0a0a 30%, #1c1c3c 60%, #0033ff 80%, #d9a25f 100%),
+    url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+  background-size: cover, auto;
+  background-blend-mode: overlay;
   color: #fff;
   line-height: 1.6;
   position: relative;
   overflow-x: hidden;
-}
-
-/* Efecto de grano sutil con pseudo-elemento */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
-  opacity: 0.03;
-  pointer-events: none;
-  z-index: 0;
 }
 
 /* Estructura general */
