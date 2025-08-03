@@ -4,57 +4,56 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SwiftLATAM</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- HEADER FIJO -->
-  <header class="site-header">
-    <div class="logo">
-      <a href="index.html">
-        <img src="assets/images/logo-swiftlatam.png" alt="SwiftLATAM" />
-      </a>
+  <!-- Header Fijo -->
+  <header class="navbar">
+    <div class="navbar-content">
+      <a href="#" class="logo">SwiftLATAM</a>
+      <nav class="nav-links">
+        <a href="#news1">News 1</a>
+        <a href="#news2">News 2</a>
+        <a href="#news3">News 3</a>
+        <a href="#news4">News 4</a>
+        <a href="#news5">News 5</a>
+        <a href="#news6">News 6</a>
+      </nav>
     </div>
-    <nav class="main-nav">
-      <a href="#">News 1</a>
-      <a href="#">News 2</a>
-      <a href="#">News 3</a>
-      <a href="#">News 4</a>
-      <a href="#">News 5</a>
-      <a href="#">News 6</a>
-    </nav>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero-section" style="background-image: url('assets/images/hero.jpg');">
-    <div class="hero-content">
+  <!-- Hero principal -->
+  <section class="hero" id="news1">
+    <div class="hero-text">
       <h1>Bienvenidos a SwiftLATAM</h1>
-      <p>
-        Comunidad creada para conectar, enseñar y potenciar a los desarrolladores de iOS, macOS y todo el ecosistema Apple en español.
-      </p>
-      <a class="hero-link" href="news4.html">Descubre nuestras actividades</a>
+      <p>Comunidad creada para conectar, enseñar y potenciar a los desarrolladores de iOS, macOS y todo el ecosistema Apple en español.</p>
+      <a href="#news1" class="hero-link">Descubre nuestras actividades</a>
     </div>
   </section>
 
-  <!-- BLOQUES DESTACADOS -->
+  <!-- Bloques destacados -->
   <section class="featured-section">
-    <div class="featured-card left" onclick="location.href='evento.html'">
-      <img src="assets/images/featured-event.jpg" alt="Evento anual" />
-    </div>
-    <div class="featured-card right" onclick="location.href='app.html'">
-      <img src="assets/images/featured-app.jpg" alt="App educativa" />
-    </div>
+    <a href="#news2" class="featured-card">
+      <img src="assets/images/featured-event.jpg" alt="Evento" />
+    </a>
+    <a href="#news3" class="featured-card">
+      <img src="assets/images/featured-app.jpg" alt="Swift Learn App" />
+    </a>
   </section>
 
-  <!-- CARRUSEL CON DEGRADADO -->
-  <section class="carousel-section">
-    <div class="carousel-track">
-      <a href="news4.html">
-        <img src="assets/images/carousel/logo1.png" alt="Logo 1" />
-        <img src="assets/images/carousel/logo2.png" alt="Logo 2" />
-        <img src="assets/images/carousel/logo3.png" alt="Logo 3" />
-        <!-- Continúa con los demás logos -->
-      </a>
+  <!-- Carrusel inferior -->
+  <section class="frameworks-section" id="news4">
+    <div class="frameworks-text">
+      <h2>Los Frameworks de Apple</h2>
+      <p>Lo que Apple te puede ofrecer</p>
+    </div>
+    <div class="carousel">
+      <div class="carousel-track">
+        <!-- Aquí insertarás los 25 íconos -->
+        <!-- Ejemplo: -->
+        <!-- <img src="assets/images/framework-01.png" alt="Framework 1" /> -->
+      </div>
     </div>
   </section>
 
