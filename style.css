@@ -1,130 +1,172 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   background-color: #000;
-  color: white;
+  color: #fff;
 }
 
+/* NAVBAR */
 .header {
-  position: fixed;
-  top: 0;
-  width: 100%;
   background-color: #111;
   padding: 1rem 0;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
 }
 
 .nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .nav-items {
   display: flex;
-  gap: 2rem;
+  justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 
 .nav-link {
+  color: #fff;
   text-decoration: none;
-  color: white;
   font-weight: 500;
-  transition: transform 0.2s;
 }
 
-.nav-link:hover {
-  transform: scale(1.05);
+.nav-link.logo {
+  font-weight: 700;
+  margin-right: 2rem;
 }
 
-.logo {
-  font-weight: bold;
-}
-
+/* HERO */
 .hero {
-  height: 35vh;
-  background: url('./assets/images/hero.jpg') center center/cover no-repeat;
+  position: relative;
+  height: 33vh;
+  background: url('./assets/images/hero.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 8rem 2rem 2rem;
 }
 
-.hero-content h1 {
-  font-size: 2.5rem;
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 90%;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
-.hero-content p {
+.hero p {
   font-size: 1.2rem;
+  margin-bottom: 1rem;
   max-width: 600px;
-  margin: 0 auto 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cta-button {
-  padding: 0.75rem 1.5rem;
   background-color: white;
   color: black;
+  padding: 0.6rem 1.2rem;
   border: none;
+  border-radius: 6px;
+  font-weight: 600;
   cursor: pointer;
-  font-weight: bold;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .cta-button:hover {
-  transform: scale(1.05);
+  background-color: #ccc;
 }
 
+/* FEATURED SECTION */
 .featured-section {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
+  justify-content: center;
+  gap: 2rem;
   background-color: #111;
-  margin-top: 2rem;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
 }
 
 .featured-card {
-  width: 50%;
+  width: 45%;
+  min-width: 280px;
   cursor: pointer;
   overflow: hidden;
-  transition: transform 0.3s;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.featured-card:hover {
+  transform: scale(1.02);
 }
 
 .featured-card img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
   display: block;
-  transition: transform 0.3s;
+  border-radius: 12px;
 }
 
-.featured-card:active img {
-  transform: scale(0.95);
-}
-
+/* CAROUSEL SECTION */
 .carousel-section {
-  background: rgba(20, 20, 20, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   text-align: center;
 }
 
 .carousel-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .carousel {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   overflow-x: auto;
-  padding: 1rem 0;
+  scroll-behavior: smooth;
+  padding: 1rem;
+  animation: scroll 30s linear infinite;
+}
+
+.carousel img {
+  height: 80px;
+  flex-shrink: 0;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.1);
+}
+
+.carousel:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .featured-card {
+    width: 90%;
+  }
 }
