@@ -1,75 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SwiftLATAM</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <h1>Bienvenido a SwiftLATAM</h1>
-      <p>Comunidad de desarrolladores Apple en Latinoamérica.</p>
-      <a href="#explora" class="btn">Explora</a>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SwiftLATAM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <section>
-      <h2>¿Qué es SwiftLATAM?</h2>
-      <div class="centered-text">
-        <p>
-          Es una comunidad creada para conectar, enseñar y potenciar a los
-          desarrolladores de iOS, macOS y todo el ecosistema Apple en español.
-        </p>
-      </div>
-    </section>
+  <!-- HEADER FIJO -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="logo-swiftlatam.png" alt="SwiftLATAM Logo" />
+      </a>
+      <nav class="nav-links">
+        <a href="news1.html">News 1</a>
+        <a href="news2.html">News 2</a>
+        <a href="news3.html">News 3</a>
+        <a href="news4.html">News 4</a>
+        <a href="news5.html">News 5</a>
+        <a href="news6.html">News 6</a>
+      </nav>
+    </div>
+  </header>
 
-    <section>
-      <h2>¿Qué encontrarás aquí?</h2>
-      <div class="columns">
-        <div class="card">
-          <h3>Aprende</h3>
-          <p>Tutoriales y ejemplos con Swift, UIKit, SwiftUI y más.</p>
-        </div>
-        <div class="card">
-          <h3>Comparte</h3>
-          <p>Charlas, entrevistas y discusiones técnicas.</p>
-        </div>
-        <div class="card">
-          <h3>Conecta</h3>
-          <p>Únete al Discord y colabora en proyectos reales.</p>
-        </div>
-      </div>
-    </section>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Bienvenidos a SwiftLATAM</h1>
+      <p>Comunidad creada para conectar, enseñar y potenciar a los desarrolladores de iOS, macOS y todo el ecosistema Apple en español.</p>
+      <a href="news1.html" class="hero-link">Descubre nuestras actividades</a>
+    </div>
+  </section>
 
-    <section>
-      <h2>Visión a futuro</h2>
-      <div class="columns">
-        <div class="card">
-          <h3>App educativa</h3>
-          <p>Una app para organizar tus aprendizajes de desarrollo Apple.</p>
-        </div>
-        <div class="card">
-          <h3>Canal YouTube</h3>
-          <p>Contenido visual con entrevistas y análisis técnico.</p>
-        </div>
-        <div class="card">
-          <h3>Repositorio</h3>
-          <p>Fragmentos de código, tips y soluciones reales.</p>
-        </div>
-      </div>
-    </section>
+  <!-- BLOQUES DESTACADOS -->
+  <section class="featured">
+    <a href="news2.html" class="featured-box left">
+      <img src="evento-anual.jpg" alt="Evento Anual SwiftLATAM" />
+    </a>
+    <a href="news3.html" class="featured-box right">
+      <img src="swiftlearn.jpg" alt="App Swift Learn" />
+    </a>
+  </section>
 
-    <footer>
-      <p>© 2025 SwiftLATAM. Todos los derechos reservados.</p>
-      <div class="social-icons">
-        <a href="#"><img src="github.svg" alt="GitHub" /></a>
-        <a href="#"><img src="youtube.svg" alt="YouTube" /></a>
-        <a href="#"><img src="discord.svg" alt="Discord" /></a>
+  <!-- CARRUSEL -->
+  <section class="carousel-section">
+    <div class="carousel-title">Estos son los frameworks que Apple tiene para ti</div>
+    <a href="news4.html" class="carousel-wrapper">
+      <div class="carousel-track">
+        <!-- Aquí se colocan los logos, usa nombres como logo1.png, logo2.png... -->
+        <img src="logos/logo1.png" alt="Framework 1" />
+        <img src="logos/logo2.png" alt="Framework 2" />
+        <img src="logos/logo3.png" alt="Framework 3" />
+        <!-- Continúa hasta logo25.png si deseas -->
       </div>
-    </footer>
-  </body>
+    </a>
+  </section>
+
+</body>
 </html>
