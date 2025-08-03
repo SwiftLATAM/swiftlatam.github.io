@@ -8,91 +8,101 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <h1>SwiftLATAM</h1>
+    <p>Una comunidad para desarrolladores Apple en Latinoamérica.</p>
+    <a class="btn" href="#apoyanos">Únete a la comunidad</a>
+  </header>
 
-  <!-- NAVBAR -->
-  <nav>
-    <div class="logo">SwiftLATAM</div>
-    <ul>
-      <li><a href="#que">¿Qué es?</a></li>
-      <li><a href="#encuentras">Recursos</a></li>
-      <li><a href="#vision">Visión</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <h1 data-aos="fade-up">Bienvenido a SwiftLATAM</h1>
-    <p data-aos="fade-up" data-aos-delay="100">
-      Comunidad de desarrolladores Apple en Latinoamérica.
-    </p>
-    <a class="btn" href="#que" data-aos="zoom-in" data-aos-delay="200">Explora</a>
-  </section>
-
-  <!-- ¿Qué es SwiftLATAM? -->
-  <section id="que">
-    <div class="container">
-      <h2 data-aos="fade-up">¿Qué es SwiftLATAM?</h2>
-      <p class="centered-text" data-aos="fade-up" data-aos-delay="100">
-        Es una comunidad creada para conectar, enseñar y potenciar a los desarrolladores de iOS, macOS y todo el ecosistema Apple en español.
+  <div class="container">
+    <section>
+      <h2>¿Qué es SwiftLATAM?</h2>
+      <p class="centered-text">
+        Es una comunidad creada para conectar, enseñar y potenciar a los desarrolladores de iOS, macOS y todo el ecosistema Apple en español, desde América Latina para el mundo.
       </p>
-    </div>
-  </section>
+    </section>
 
-  <!-- ¿Qué encontrarás aquí? -->
-  <section id="encuentras">
-    <div class="container">
-      <h2 data-aos="fade-up">¿Qué encontrarás aquí?</h2>
-      <div class="cards">
-        <div class="card" data-aos="fade-up" data-aos-delay="100">
+    <section>
+      <h2>¿Qué encontrarás aquí?</h2>
+      <div class="columns">
+        <div class="card">
           <h3>Aprende</h3>
-          <p>Tutoriales y ejemplos con Swift, UIKit, SwiftUI y más.</p>
+          <p>Tutoriales, ejemplos y ejercicios prácticos con Swift, UIKit, SwiftUI y más.</p>
         </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card">
           <h3>Comparte</h3>
-          <p>Charlas, entrevistas y discusiones técnicas.</p>
+          <p>Participa en charlas, entrevistas y mesas de discusión sobre desarrollo Apple.</p>
         </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="300">
+        <div class="card">
           <h3>Conecta</h3>
-          <p>Únete al Discord y colabora en proyectos reales.</p>
+          <p>Únete al servidor de Discord, conoce a otros devs y colabora en proyectos reales.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Visión a futuro -->
-  <section id="vision">
-    <div class="container">
-      <h2 data-aos="fade-up">Visión a futuro</h2>
-      <div class="cards">
-        <div class="card" data-aos="fade-up" data-aos-delay="100">
+    <section>
+      <h2>Visión a futuro</h2>
+      <div class="columns">
+        <div class="card">
           <h3>App educativa</h3>
-          <p>Una app para organizar tus aprendizajes de desarrollo Apple.</p>
+          <p>Estamos creando una app para ayudarte a organizar y profundizar tus aprendizajes.</p>
         </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card">
           <h3>Canal YouTube</h3>
-          <p>Contenido visual con entrevistas y análisis técnicos.</p>
+          <p>Publicaremos entrevistas, análisis técnicos y contenido visual didáctico.</p>
         </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="300">
-          <h3>Repositorio</h3>
-          <p>Fragmentos de código, tips y soluciones reales.</p>
+        <div class="card">
+          <h3>Repositorio de recursos</h3>
+          <p>Una biblioteca abierta con fragmentos de código, tips y soluciones reales.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
+    <section id="apoyanos">
+      <h2>Apóyanos</h2>
+      <p class="centered-text">
+        Si te gusta lo que hacemos, puedes colaborar con el proyecto. Cada aporte ayuda a mantener y hacer crecer SwiftLATAM.
+      </p>
+      <div class="centered-block">
+        <a class="btn" href="#gracias">Donar vía PayPal</a>
+      </div>
+    </section>
+
+    <section id="gracias" style="display: none;">
+      <h2>¡Gracias por tu apoyo!</h2>
+      <p class="centered-text">Haz clic aquí para unirte al servidor de Discord:</p>
+      <div class="centered-block">
+        <a class="btn" href="https://discord.gg/TU_INVITACION" target="_blank">Entrar a Discord</a>
+      </div>
+    </section>
+  </div>
+
   <footer>
-    © 2025 SwiftLATAM · Hecho con ❤️ por desarrolladores Apple LATAM
+    <div class="social-icons">
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <img src="icons/linkedin.svg" alt="LinkedIn">
+      </a>
+      <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+        <img src="icons/youtube.svg" alt="YouTube">
+      </a>
+      <a href="https://discord.com" target="_blank" aria-label="Discord">
+        <img src="icons/discord.svg" alt="Discord">
+      </a>
+      <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+        <img src="icons/tiktok.svg" alt="TikTok">
+      </a>
+    </div>
+ 
+    <p>© 2025 SwiftLATAM · Hecho con pasión por SwiftLATAM</p>
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init();
+    if (window.location.hash === '#gracias') {
+      document.getElementById('apoyanos').style.display = 'none';
+      document.getElementById('gracias').style.display = 'block';
+    }
   </script>
-
 </body>
 </html>
