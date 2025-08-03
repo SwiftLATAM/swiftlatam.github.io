@@ -1,62 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SwiftLATAM</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <!-- Header Fijo -->
-  <header class="navbar">
-    <div class="navbar-content">
-      <a href="#" class="logo">SwiftLATAM</a>
-      <nav class="nav-links">
-        <a href="#news1">News 1</a>
-        <a href="#news2">News 2</a>
-        <a href="#news3">News 3</a>
-        <a href="#news4">News 4</a>
-        <a href="#news5">News 5</a>
-        <a href="#news6">News 6</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwiftLATAM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-items">
+          <a href="#" class="nav-link logo">SwiftLATAM</a>
+          <a href="#" class="nav-link">News 1</a>
+          <a href="#" class="nav-link">News 2</a>
+          <a href="#" class="nav-link">News 3</a>
+          <a href="#" class="nav-link">News 4</a>
+          <a href="#" class="nav-link">News 5</a>
+          <a href="#" class="nav-link">News 6</a>
+        </div>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <!-- Hero principal -->
-  <section class="hero" id="news1">
-    <div class="hero-text">
-      <h1>Bienvenidos a SwiftLATAM</h1>
-      <p>Comunidad creada para conectar, enseñar y potenciar a los desarrolladores de iOS, macOS y todo el ecosistema Apple en español.</p>
-      <a href="#news1" class="hero-link">Descubre nuestras actividades</a>
-    </div>
-  </section>
-
-  <!-- Bloques destacados -->
-  <section class="featured-section">
-    <a href="#news2" class="featured-card">
-      <img src="assets/images/featured-event.jpg" alt="Evento" />
-    </a>
-    <a href="#news3" class="featured-card">
-      <img src="assets/images/featured-app.jpg" alt="Swift Learn App" />
-    </a>
-  </section>
-
-  <!-- Carrusel inferior -->
-  <section class="frameworks-section" id="news4">
-    <div class="frameworks-text">
-      <h2>Los Frameworks de Apple</h2>
-      <p>Lo que Apple te puede ofrecer</p>
-    </div>
-    <div class="carousel">
-      <div class="carousel-track">
-        <!-- Aquí insertarás los 25 íconos -->
-        <!-- Ejemplo: -->
-        <!-- <img src="assets/images/framework-01.png" alt="Framework 1" /> -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Bienvenidos a SwiftLATAM</h1>
+        <p>
+          Comunidad creada para conectar, enseñar y potenciar a los desarrolladores de iOS, macOS y todo el ecosistema Apple en español.
+        </p>
+        <button class="cta-button">Descubre nuestras actividades</button>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="script.js"></script>
-</body>
+    <section class="featured-section">
+      <div class="featured-card left" onclick="window.location.href='#'">
+        <img src="./assets/images/featured-event.jpg" alt="Evento Anual" />
+      </div>
+      <div class="featured-card right" onclick="window.location.href='#'">
+        <img src="./assets/images/featured-app.jpg" alt="App Educativa" />
+      </div>
+    </section>
+
+    <section class="carousel-section">
+      <h2>Los Frameworks de Apple</h2>
+      <div class="carousel">
+        <!-- Aquí se insertarán los logos -->
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
 </html>
